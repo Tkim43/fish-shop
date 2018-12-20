@@ -1,0 +1,19 @@
+{
+  "name": "fish_shop",
+  "version": "1.0.0",
+  "description": "Ecommerce demo site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tkim43/fish-shop.git"
+  },
+  "author": "Tiffany Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tkim43/fish-shop/issues"
+  },
+  "homepage": "https://github.com/Tkim43/fish-shop#readme"
+}
