@@ -14,7 +14,9 @@ app.use(express.urlencoded({extended: false}));
 // json is for sending json in your post request
 app.use(express.json());
 
-// app.use(express.static());
+app.use(express.static(resolve(__dirname, 'client','dist')));
+
+require('./routes')(app);
 
 // this is routing to the back end 
 app.get('/', (req, res) =>{
