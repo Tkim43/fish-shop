@@ -1,15 +1,20 @@
 import React from 'react';
-import '../assets/css/app.css';
-import logo from '../assets/images/ff.jpeg';
-import Test from './test';
+import AccountRoutes from './account';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize';
+import {Route, Switch} from 'react-router-dom';
+import NotFound from './general/404'
+import Nav from './nav'
 
 const App = () => (
     <div>
-        <div className="app">
-            <img src={logo} className="logo rotate"/>
-            <h1>Welcome to Gold Fish Land</h1>
+        <Nav/>
+        <div className="container">
+            <Switch>
+                <Route path= "/account" component = {AccountRoutes}/>
+                <Route component={NotFound}/>
+            </Switch>
         </div>
-        <Test/>
     </div>
 );
 
