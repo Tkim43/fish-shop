@@ -1,6 +1,6 @@
 import React from 'react';
 import SignIn from './sign_in';
-import SignUp from './sign_up';
+import SignUp from './sign_up/sign_up';
 import NotFound from '../general/404'
 import {Route, Switch} from 'react-router-dom';
 
